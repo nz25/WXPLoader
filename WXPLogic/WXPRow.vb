@@ -97,32 +97,32 @@
         End If
 
         'Factor Expression
-        'If line.Contains("!") Then
-        '    Dim factorExpression As String = line.Substring(line.IndexOf("!") + 1)
-        '    If factorExpression.Contains("P") Then
-        '        FactorLabel = factorExpression.Substring(factorExpression.IndexOf("P") + 2)
-        '        factorExpression = factorExpression.Substring(0, factorExpression.IndexOf("P"))
-        '    Else
-        '        FactorLabel = String.Empty
-        '    End If
+        If line.Contains("!") Then
+            Dim factorExpression As String = line.Substring(line.IndexOf("!") + 1)
+            If factorExpression.Contains("P") Then
+                FactorLabel = factorExpression.Substring(factorExpression.IndexOf("P") + 2)
+                factorExpression = factorExpression.Substring(0, factorExpression.IndexOf("P"))
+            Else
+                FactorLabel = String.Empty
+            End If
 
-        '    If factorExpression.Contains("^") Then
-        '        FactorAvg = factorExpression.Substring(0, factorExpression.IndexOf("^"))
-        '        FactorMin = factorExpression.Substring(factorExpression.IndexOf("^") + 2, factorExpression.IndexOf(",") - factorExpression.IndexOf("^") - 2)
-        '        FactorMax = factorExpression.Substring(factorExpression.IndexOf(",") + 2)
-        '    Else
-        '        FactorAvg = factorExpression
-        '        FactorMin = String.Empty
-        '        FactorMax = String.Empty
-        '    End If
-        '    line = line.Substring(0, line.IndexOf("!"))
-        'Else
-        FactorAvg = String.Empty
-        FactorMin = String.Empty
-        FactorMax = String.Empty
-        FactorLabel = String.Empty
+            If factorExpression.Contains("^") Then
+                FactorAvg = factorExpression.Substring(0, factorExpression.IndexOf("^"))
+                FactorMin = factorExpression.Substring(factorExpression.IndexOf("^") + 2, factorExpression.IndexOf(",") - factorExpression.IndexOf("^") - 2)
+                FactorMax = factorExpression.Substring(factorExpression.IndexOf(",") + 2)
+            Else
+                FactorAvg = factorExpression
+                FactorMin = String.Empty
+                FactorMax = String.Empty
+            End If
+            line = line.Substring(0, line.IndexOf("!"))
+        Else
+            FactorAvg = String.Empty
+            FactorMin = String.Empty
+            FactorMax = String.Empty
+            FactorLabel = String.Empty
 
-        'End If
+        End If
 
         'Label
         If line.Length > 0 AndAlso line.Substring(0, 1) = "%" Then

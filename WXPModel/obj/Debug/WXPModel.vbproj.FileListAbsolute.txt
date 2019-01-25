@@ -7,12 +7,12 @@ C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\D
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.xml
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.pdb
 C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
-D:\fred_statarts\WXPLoader\WXPModel\bin\Debug\WXPModel.dll.config
-D:\fred_statarts\WXPLoader\WXPModel\bin\Debug\WXPModel.dll
-D:\fred_statarts\WXPLoader\WXPModel\bin\Debug\WXPModel.pdb
-D:\fred_statarts\WXPLoader\WXPModel\bin\Debug\WXPModel.xml
-D:\fred_statarts\WXPLoader\WXPModel\obj\Debug\WXPModel.Resources.resources
-D:\fred_statarts\WXPLoader\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
-D:\fred_statarts\WXPLoader\WXPModel\obj\Debug\WXPModel.dll
-D:\fred_statarts\WXPLoader\WXPModel\obj\Debug\WXPModel.xml
-D:\fred_statarts\WXPLoader\WXPModel\obj\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader\WXPModel\bin\Debug\WXPModel.dll.config
+X:\dev\2010\WXPLoader\WXPModel\bin\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader\WXPModel\bin\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader\WXPModel\bin\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader\WXPModel\obj\Debug\WXPModel.Resources.resources
+X:\dev\2010\WXPLoader\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
+X:\dev\2010\WXPLoader\WXPModel\obj\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader\WXPModel\obj\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader\WXPModel\obj\Debug\WXPModel.pdb

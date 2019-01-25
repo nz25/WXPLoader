@@ -34,24 +34,24 @@ C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPModel.xml
 C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbprojResolveAssemblyReference.cache
 C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbproj.GenerateResource.Cache
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe.config
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.exe
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.xml
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.pdb
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.pdb
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.xml
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.dll
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.dll
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.pdb
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.xml
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.pdb
-D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.xml
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbprojResolveAssemblyReference.cache
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.baml
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.g.vb
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\Application.g.vb
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader_MarkupCompile.cache
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.g.resources
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.Resources.resources
-D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbproj.GenerateResource.Cache
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe.config
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.exe
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.xml
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.pdb
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLoader.pdb
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLoader.xml
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLogic.dll
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLogic.pdb
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPLogic.xml
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader\WXPLoader\bin\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbprojResolveAssemblyReference.cache
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.baml
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.g.vb
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\Application.g.vb
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader_MarkupCompile.cache
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.g.resources
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.Resources.resources
+X:\dev\2010\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbproj.GenerateResource.Cache
