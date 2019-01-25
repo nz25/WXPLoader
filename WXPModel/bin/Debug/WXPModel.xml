@@ -1,0 +1,692 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WXPModel
+</name>
+</assembly>
+<members>
+<member name="P:WXPModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WXPModel.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WXPModel.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:WXPModel.wxp_dbEntities.#ctor">
+	<summary>
+ Initialisiert ein neues wxp_dbEntities-Objekt mithilfe der in Abschnitt 'wxp_dbEntities' der Anwendungskonfigurationsdatei gefundenen Verbindungszeichenfolge.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.#ctor(System.String)">
+	<summary>
+ Initialisiert ein neues wxp_dbEntities-Objekt.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialisiert ein neues wxp_dbEntities-Objekt.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Datasets">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Folders">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Items">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.ItemTypes">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Respondents">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Variables">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.VariableTypes">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.Headers">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.FilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.wxp_dbEntities.FilterItemTypes">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToDatasets(WXPModel.Dataset)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Datasets'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToFolders(WXPModel.Folder)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Folders'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToItems(WXPModel.Item)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Items'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToItemTypes(WXPModel.ItemType)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'ItemTypes'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToRespondents(WXPModel.Respondent)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Respondents'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToVariables(WXPModel.Variable)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Variables'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToVariableTypes(WXPModel.VariableType)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'VariableTypes'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToHeaders(WXPModel.Header)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'Headers'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToFilterItems(WXPModel.FilterItem)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'FilterItems'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.AddToFilterItemTypes(WXPModel.FilterItemType)">
+	<summary>
+ Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'FilterItemTypes'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet(Of T) '.
+ </summary>
+</member><member name="M:WXPModel.wxp_dbEntities.UpdateFKColumns(System.Nullable{System.Int32})">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+	<param name="datasetID">Keine Dokumentation für Metadaten verfügbar.</param>
+</member><member name="T:WXPModel.wxp_dbEntities">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Dataset.CreateDataset(System.Int32,System.String)">
+	<summary>
+ Erstellt ein neues Dataset-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="name">Anfangswert der Eigenschaft Name.</param>
+</member><member name="P:WXPModel.Dataset.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Name">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Folders">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Items">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Respondents">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Variables">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.Headers">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Dataset.FilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.FilterItem.CreateFilterItem(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Erstellt ein neues FilterItem-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="filterItemTypeID">Anfangswert der Eigenschaft FilterItemTypeID.</param>
+	<param name="rowIndex">Anfangswert der Eigenschaft RowIndex.</param>
+	<param name="columnIndex">Anfangswert der Eigenschaft ColumnIndex.</param>
+	<param name="variableID">Anfangswert der Eigenschaft VariableID.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.FilterItem.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterItemTypeID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.RowIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.ColumnIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.ItemIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.Label">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterVariableID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterItemID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.VariableID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterItemType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterItemTypeReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.Item">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.ItemReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterVariable">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.FilterVariableReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.Variable">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.VariableReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItem.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.FilterItem">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.FilterItemType.CreateFilterItemType(System.Int32,System.String)">
+	<summary>
+ Erstellt ein neues FilterItemType-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="name">Anfangswert der Eigenschaft Name.</param>
+</member><member name="P:WXPModel.FilterItemType.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItemType.Name">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.FilterItemType.FilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.FilterItemType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Folder.CreateFolder(System.Int32,System.Int32,System.Int32,System.String,System.Boolean,System.Int32)">
+	<summary>
+ Erstellt ein neues Folder-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="rowIndex">Anfangswert der Eigenschaft RowIndex.</param>
+	<param name="folderLevel">Anfangswert der Eigenschaft FolderLevel.</param>
+	<param name="label">Anfangswert der Eigenschaft Label.</param>
+	<param name="isUserDefined">Anfangswert der Eigenschaft IsUserDefined.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.Folder.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.RowIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.FolderLevel">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.Label">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.IsUserDefined">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.ParentID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.ChildFolders">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.ParentFolder">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.ParentFolderReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Folder.Variables">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Folder">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Header.CreateHeader(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Erstellt ein neues Header-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="columnIndex">Anfangswert der Eigenschaft ColumnIndex.</param>
+	<param name="position">Anfangswert der Eigenschaft Position.</param>
+	<param name="length">Anfangswert der Eigenschaft Length.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.Header.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.ColumnIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.Position">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.Length">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Header.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Header">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Item.CreateItem(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Boolean,System.Int32,System.Int32)">
+	<summary>
+ Erstellt ein neues Item-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="itemTypeID">Anfangswert der Eigenschaft ItemTypeID.</param>
+	<param name="rowIndex">Anfangswert der Eigenschaft RowIndex.</param>
+	<param name="columnIndex">Anfangswert der Eigenschaft ColumnIndex.</param>
+	<param name="label">Anfangswert der Eigenschaft Label.</param>
+	<param name="isDeleted">Anfangswert der Eigenschaft IsDeleted.</param>
+	<param name="variableID">Anfangswert der Eigenschaft VariableID.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.Item.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemTypeID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.RowIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ColumnIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.Label">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.IsDeleted">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.NetLevel">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.FactorAvg">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.FactorMin">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.FactorMax">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.FactorLabel">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemVariableID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.VariableID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ParentItemID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.LabelStartsWithPercent">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemTypeReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemVariable">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ItemVariableReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.Variable">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.VariableReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ChildItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ParentItem">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.ParentItemReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Item.FilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Item">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.ItemType.CreateItemType(System.Int32,System.String,System.Boolean)">
+	<summary>
+ Erstellt ein neues ItemType-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="name">Anfangswert der Eigenschaft Name.</param>
+	<param name="isBaseItem">Anfangswert der Eigenschaft IsBaseItem.</param>
+</member><member name="P:WXPModel.ItemType.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.ItemType.Name">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.ItemType.IsBaseItem">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.ItemType.Items">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.ItemType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Respondent.CreateRespondent(System.Int32,System.Int64,System.Int32,System.Int32)">
+	<summary>
+ Erstellt ein neues Respondent-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="originalRespondentID">Anfangswert der Eigenschaft OriginalRespondentID.</param>
+	<param name="rowIndex">Anfangswert der Eigenschaft RowIndex.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.Respondent.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Respondent.OriginalRespondentID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Respondent.RowIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Respondent.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Respondent.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Respondent.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Respondent">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.Variable.CreateVariable(System.Int32,System.Int32,System.String,System.Boolean,System.Int32)">
+	<summary>
+ Erstellt ein neues Variable-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="rowIndex">Anfangswert der Eigenschaft RowIndex.</param>
+	<param name="label">Anfangswert der Eigenschaft Label.</param>
+	<param name="isDeleted">Anfangswert der Eigenschaft IsDeleted.</param>
+	<param name="datasetID">Anfangswert der Eigenschaft DatasetID.</param>
+</member><member name="P:WXPModel.Variable.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.VariableTypeID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.RowIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.ColumnIndex">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.Label">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.IsDeleted">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.FolderID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.DatasetID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.Dataset">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.DatasetReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.Folder">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.FolderReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.VariableItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.Items">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.VariableType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.VariableTypeReference">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.UsedForFilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.Variable.FilterItems">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.Variable">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="M:WXPModel.VariableType.CreateVariableType(System.Int32,System.String)">
+	<summary>
+ Erstellt ein neues VariableType-Objekt.
+ </summary>
+	<param name="id">Anfangswert der Eigenschaft ID.</param>
+	<param name="name">Anfangswert der Eigenschaft Name.</param>
+</member><member name="P:WXPModel.VariableType.ID">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.VariableType.Name">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="P:WXPModel.VariableType.Variables">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member><member name="T:WXPModel.VariableType">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
+</member>
+</members>
+</doc>

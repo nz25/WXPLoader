@@ -1,0 +1,8 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WXP Loader" Height="171" Width="531">
+    <Grid Height="129" Width="460">
+        <Button Content="Open file..." Height="23" HorizontalAlignment="Left" Margin="24,27,0,0" Name="OpenFile" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</Window>

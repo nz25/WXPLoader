@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="wxpDBModelStoreContainer" CdmEntityContainer="wxpDBEntities">
+    <EntitySetMapping Name="Datasets">
+      <EntityTypeMapping TypeName="wxpDBModel.Dataset">
+        <MappingFragment StoreEntitySet="Datasets">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facts">
+      <EntityTypeMapping TypeName="wxpDBModel.Fact">
+        <MappingFragment StoreEntitySet="Facts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RespondentID" ColumnName="RespondentID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="FloatValue" ColumnName="FloatValue" />
+          <ScalarProperty Name="BitValue" ColumnName="BitValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Folders">
+      <EntityTypeMapping TypeName="wxpDBModel.Folder">
+        <MappingFragment StoreEntitySet="Folders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="FolderLevel" ColumnName="FolderLevel" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="IsUserDefined" ColumnName="IsUserDefined" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="wxpDBModel.Item">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="ItemIndex" ColumnName="ItemIndex" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NetLevel" ColumnName="NetLevel" />
+          <ScalarProperty Name="FactorAvg" ColumnName="FactorAvg" />
+          <ScalarProperty Name="FactorMin" ColumnName="FactorMin" />
+          <ScalarProperty Name="FactorMax" ColumnName="FactorMax" />
+          <ScalarProperty Name="FactorLabel" ColumnName="FactorLabel" />
+          <ScalarProperty Name="ItemVariableID" ColumnName="ItemVariableID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemTypes">
+      <EntityTypeMapping TypeName="wxpDBModel.ItemType">
+        <MappingFragment StoreEntitySet="ItemTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsBaseItem" ColumnName="IsBaseItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OriginalDatas">
+      <EntityTypeMapping TypeName="wxpDBModel.OriginalData">
+        <MappingFragment StoreEntitySet="OriginalData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="OriginalData1" ColumnName="OriginalData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respondents">
+      <EntityTypeMapping TypeName="wxpDBModel.Respondent">
+        <MappingFragment StoreEntitySet="Respondents">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OriginalRespondentID" ColumnName="OriginalRespondentID" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Variables">
+      <EntityTypeMapping TypeName="wxpDBModel.Variable">
+        <MappingFragment StoreEntitySet="Variables">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableTypes">
+      <EntityTypeMapping TypeName="wxpDBModel.VariableType">
+        <MappingFragment StoreEntitySet="VariableTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

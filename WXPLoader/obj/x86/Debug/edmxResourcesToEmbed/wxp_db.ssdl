@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="wxpDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="wxpDBModelStoreContainer">
+    <EntitySet Name="Datasets" EntityType="wxpDBModel.Store.Datasets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Facts" EntityType="wxpDBModel.Store.Facts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Folders" EntityType="wxpDBModel.Store.Folders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Items" EntityType="wxpDBModel.Store.Items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ItemTypes" EntityType="wxpDBModel.Store.ItemTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OriginalData" EntityType="wxpDBModel.Store.OriginalData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Respondents" EntityType="wxpDBModel.Store.Respondents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Variables" EntityType="wxpDBModel.Store.Variables" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VariableTypes" EntityType="wxpDBModel.Store.VariableTypes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Facts_Items" Association="wxpDBModel.Store.FK_Facts_Items">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="Facts" EntitySet="Facts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Facts_Respondents" Association="wxpDBModel.Store.FK_Facts_Respondents">
+      <End Role="Respondents" EntitySet="Respondents" />
+      <End Role="Facts" EntitySet="Facts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Folders_Datasets" Association="wxpDBModel.Store.FK_Folders_Datasets">
+      <End Role="Datasets" EntitySet="Datasets" />
+      <End Role="Folders" EntitySet="Folders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Folders_Folders" Association="wxpDBModel.Store.FK_Folders_Folders">
+      <End Role="Folders" EntitySet="Folders" />
+      <End Role="Folders1" EntitySet="Folders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_ItemTypes" Association="wxpDBModel.Store.FK_Items_ItemTypes">
+      <End Role="ItemTypes" EntitySet="ItemTypes" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Variables" Association="wxpDBModel.Store.FK_Items_Variables">
+      <End Role="Variables" EntitySet="Variables" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Variables1" Association="wxpDBModel.Store.FK_Items_Variables1">
+      <End Role="Variables" EntitySet="Variables" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OriginalData_Datasets" Association="wxpDBModel.Store.FK_OriginalData_Datasets">
+      <End Role="Datasets" EntitySet="Datasets" />
+      <End Role="OriginalData" EntitySet="OriginalData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Respondents_Datasets" Association="wxpDBModel.Store.FK_Respondents_Datasets">
+      <End Role="Datasets" EntitySet="Datasets" />
+      <End Role="Respondents" EntitySet="Respondents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variables_VariableTypes" Association="wxpDBModel.Store.FK_Variables_VariableTypes">
+      <End Role="VariableTypes" EntitySet="VariableTypes" />
+      <End Role="Variables" EntitySet="Variables" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Datasets">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Facts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RespondentID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="FloatValue" Type="float" />
+    <Property Name="BitValue" Type="bit" />
+  </EntityType>
+  <EntityType Name="Folders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RowIndex" Type="int" Nullable="false" />
+    <Property Name="FolderLevel" Type="int" Nullable="false" />
+    <Property Name="Label" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsUserDefined" Type="bit" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="DatasetID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ItemTypeID" Type="int" Nullable="false" />
+    <Property Name="RowIndex" Type="int" Nullable="false" />
+    <Property Name="ColumnIndex" Type="int" Nullable="false" />
+    <Property Name="ItemIndex" Type="int" />
+    <Property Name="Label" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="NetLevel" Type="int" />
+    <Property Name="FactorAvg" Type="float" />
+    <Property Name="FactorMin" Type="float" />
+    <Property Name="FactorMax" Type="float" />
+    <Property Name="FactorLabel" Type="nvarchar" MaxLength="255" />
+    <Property Name="ItemVariableID" Type="int" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsBaseItem" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OriginalData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RowIndex" Type="int" Nullable="false" />
+    <Property Name="DatasetID" Type="int" Nullable="false" />
+    <Property Name="OriginalData" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Respondents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OriginalRespondentID" Type="bigint" Nullable="false" />
+    <Property Name="RowIndex" Type="int" Nullable="false" />
+    <Property Name="DatasetID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Variables">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VariableTypeID" Type="int" />
+    <Property Name="RowIndex" Type="int" Nullable="false" />
+    <Property Name="ColumnIndex" Type="int" />
+    <Property Name="Label" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="FolderID" Type="int" />
+  </EntityType>
+  <EntityType Name="VariableTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Facts_Items">
+    <End Role="Items" Type="wxpDBModel.Store.Items" Multiplicity="1" />
+    <End Role="Facts" Type="wxpDBModel.Store.Facts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Facts">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Facts_Respondents">
+    <End Role="Respondents" Type="wxpDBModel.Store.Respondents" Multiplicity="1" />
+    <End Role="Facts" Type="wxpDBModel.Store.Facts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Respondents">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Facts">
+        <PropertyRef Name="RespondentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Folders_Datasets">
+    <End Role="Datasets" Type="wxpDBModel.Store.Datasets" Multiplicity="1" />
+    <End Role="Folders" Type="wxpDBModel.Store.Folders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datasets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Folders">
+        <PropertyRef Name="DatasetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Folders_Folders">
+    <End Role="Folders" Type="wxpDBModel.Store.Folders" Multiplicity="0..1" />
+    <End Role="Folders1" Type="wxpDBModel.Store.Folders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Folders">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Folders1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_ItemTypes">
+    <End Role="ItemTypes" Type="wxpDBModel.Store.ItemTypes" Multiplicity="1" />
+    <End Role="Items" Type="wxpDBModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ItemTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="ItemTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Variables">
+    <End Role="Variables" Type="wxpDBModel.Store.Variables" Multiplicity="0..1" />
+    <End Role="Items" Type="wxpDBModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variables">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="ItemVariableID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Variables1">
+    <End Role="Variables" Type="wxpDBModel.Store.Variables" Multiplicity="1" />
+    <End Role="Items" Type="wxpDBModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variables">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="VariableID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OriginalData_Datasets">
+    <End Role="Datasets" Type="wxpDBModel.Store.Datasets" Multiplicity="1" />
+    <End Role="OriginalData" Type="wxpDBModel.Store.OriginalData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datasets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OriginalData">
+        <PropertyRef Name="DatasetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Respondents_Datasets">
+    <End Role="Datasets" Type="wxpDBModel.Store.Datasets" Multiplicity="1" />
+    <End Role="Respondents" Type="wxpDBModel.Store.Respondents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datasets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Respondents">
+        <PropertyRef Name="DatasetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variables_VariableTypes">
+    <End Role="VariableTypes" Type="wxpDBModel.Store.VariableTypes" Multiplicity="0..1" />
+    <End Role="Variables" Type="wxpDBModel.Store.Variables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VariableTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Variables">
+        <PropertyRef Name="VariableTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

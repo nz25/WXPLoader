@@ -1,0 +1,57 @@
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\bin\Debug\WXPLoader.exe
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\bin\Debug\WXPLoader.pdb
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\bin\Debug\WXPLoader.xml
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\MainWindow.baml
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\MainWindow.g.vb
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\Application.g.vb
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader_MarkupCompile.cache
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader.g.resources
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader.Resources.resources
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader.exe
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader.xml
+C:\Users\ZorenkoD\AppData\Local\Temporary Projects\WXPLoader\obj\x86\Debug\WXPLoader.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe.config
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.exe
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.baml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.g.vb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\Application.g.vb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader_MarkupCompile.cache
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.g.resources
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.Resources.resources
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLoader.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLoader.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLogic.dll
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLogic.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPLogic.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPModel.dll
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPModel.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLoader\bin\Debug\WXPModel.xml
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbprojResolveAssemblyReference.cache
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbproj.GenerateResource.Cache
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe.config
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.exe
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.xml
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.pdb
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.exe
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.pdb
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLoader.xml
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.dll
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.dll
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.pdb
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPLogic.xml
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.pdb
+D:\fred_statarts\WXPLoader\WXPLoader\bin\Debug\WXPModel.xml
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbprojResolveAssemblyReference.cache
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.baml
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\MainWindow.g.vb
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\Application.g.vb
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader_MarkupCompile.cache
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.g.resources
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.Resources.resources
+D:\fred_statarts\WXPLoader\WXPLoader\obj\x86\Debug\WXPLoader.vbproj.GenerateResource.Cache

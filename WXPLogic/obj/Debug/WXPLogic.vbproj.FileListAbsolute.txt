@@ -1,0 +1,26 @@
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll.config
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPLogic.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPLogic.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.dll
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.pdb
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.Resources.resources
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.dll
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.pdb
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbprojResolveAssemblyReference.cache
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbproj.GenerateResource.Cache
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll.config
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPLogic.pdb
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPLogic.xml
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPModel.dll
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPModel.pdb
+D:\fred_statarts\WXPLoader\WXPLogic\bin\Debug\WXPModel.xml
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbprojResolveAssemblyReference.cache
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.Resources.resources
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbproj.GenerateResource.Cache
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.dll
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.xml
+D:\fred_statarts\WXPLoader\WXPLogic\obj\Debug\WXPLogic.pdb

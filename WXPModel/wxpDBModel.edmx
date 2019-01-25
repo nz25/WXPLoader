@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="wxp_dbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="wxp_dbModelStoreContainer">
+          <EntitySet Name="Datasets" EntityType="wxp_dbModel.Store.Datasets" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FilterItems" EntityType="wxp_dbModel.Store.FilterItems" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FilterItemTypes" EntityType="wxp_dbModel.Store.FilterItemTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Folders" EntityType="wxp_dbModel.Store.Folders" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Headers" EntityType="wxp_dbModel.Store.Headers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Items" EntityType="wxp_dbModel.Store.Items" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ItemTypes" EntityType="wxp_dbModel.Store.ItemTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Respondents" EntityType="wxp_dbModel.Store.Respondents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Variables" EntityType="wxp_dbModel.Store.Variables" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VariableTypes" EntityType="wxp_dbModel.Store.VariableTypes" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_FilterItems_Datasets" Association="wxp_dbModel.Store.FK_FilterItems_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="FilterItems" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_FilterItemTypes" Association="wxp_dbModel.Store.FK_FilterItems_FilterItemTypes">
+            <End Role="FilterItemTypes" EntitySet="FilterItemTypes" />
+            <End Role="FilterItems" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Items" Association="wxp_dbModel.Store.FK_FilterItems_Items">
+            <End Role="Items" EntitySet="Items" />
+            <End Role="FilterItems" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Variables_FilterVariableID" Association="wxp_dbModel.Store.FK_FilterItems_Variables_FilterVariableID">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="FilterItems" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Variables_VariableID" Association="wxp_dbModel.Store.FK_FilterItems_Variables_VariableID">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="FilterItems" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Folders_Datasets" Association="wxp_dbModel.Store.FK_Folders_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Folders" EntitySet="Folders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Folders_Folders" Association="wxp_dbModel.Store.FK_Folders_Folders">
+            <End Role="Folders" EntitySet="Folders" />
+            <End Role="Folders1" EntitySet="Folders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Headers_Datasets" Association="wxp_dbModel.Store.FK_Headers_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Headers" EntitySet="Headers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Datasets" Association="wxp_dbModel.Store.FK_Items_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Items" Association="wxp_dbModel.Store.FK_Items_Items">
+            <End Role="Items" EntitySet="Items" />
+            <End Role="Items1" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_ItemTypes" Association="wxp_dbModel.Store.FK_Items_ItemTypes">
+            <End Role="ItemTypes" EntitySet="ItemTypes" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Variables_ItemVariableID" Association="wxp_dbModel.Store.FK_Items_Variables_ItemVariableID">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Variables_VariableID" Association="wxp_dbModel.Store.FK_Items_Variables_VariableID">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Respondents_Datasets" Association="wxp_dbModel.Store.FK_Respondents_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Respondents" EntitySet="Respondents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_Datasets" Association="wxp_dbModel.Store.FK_Variables_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_Folders" Association="wxp_dbModel.Store.FK_Variables_Folders">
+            <End Role="Folders" EntitySet="Folders" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_VariableTypes" Association="wxp_dbModel.Store.FK_Variables_VariableTypes">
+            <End Role="VariableTypes" EntitySet="VariableTypes" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Datasets">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="FilterItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FilterItemTypeID" Type="int" />
+          <Property Name="RowIndex" Type="int" />
+          <Property Name="ColumnIndex" Type="int" />
+          <Property Name="ItemIndex" Type="int" />
+          <Property Name="Label" Type="nvarchar(max)" />
+          <Property Name="FilterVariableID" Type="int" />
+          <Property Name="FilterItemID" Type="int" />
+          <Property Name="VariableID" Type="int" />
+          <Property Name="DatasetID" Type="int" />
+        </EntityType>
+        <EntityType Name="FilterItemTypes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Folders">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RowIndex" Type="int" />
+          <Property Name="FolderLevel" Type="int" />
+          <Property Name="Label" Type="nvarchar(max)" />
+          <Property Name="IsUserDefined" Type="bit" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="DatasetID" Type="int" />
+        </EntityType>
+        <EntityType Name="Headers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ColumnIndex" Type="int" Nullable="false" />
+          <Property Name="Position" Type="int" Nullable="false" />
+          <Property Name="Length" Type="int" Nullable="false" />
+          <Property Name="DatasetID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ItemTypeID" Type="int" />
+          <Property Name="RowIndex" Type="int" />
+          <Property Name="ColumnIndex" Type="int" />
+          <Property Name="ItemIndex" Type="int" />
+          <Property Name="Label" Type="nvarchar(max)" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="LabelStartsWithPercent" Type="bit" />
+          <Property Name="NetLevel" Type="int" />
+          <Property Name="ParentItemID" Type="int" />
+          <Property Name="FactorAvg" Type="float" />
+          <Property Name="FactorMin" Type="float" />
+          <Property Name="FactorMax" Type="float" />
+          <Property Name="FactorLabel" Type="nvarchar" MaxLength="255" />
+          <Property Name="ItemVariableID" Type="int" />
+          <Property Name="VariableID" Type="int" />
+          <Property Name="DatasetID" Type="int" />
+        </EntityType>
+        <EntityType Name="ItemTypes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsBaseItem" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Respondents">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OriginalRespondentID" Type="bigint" Nullable="false" />
+          <Property Name="RowIndex" Type="int" Nullable="false" />
+          <Property Name="DatasetID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Variables">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VariableTypeID" Type="int" />
+          <Property Name="RowIndex" Type="int" />
+          <Property Name="ColumnIndex" Type="int" />
+          <Property Name="Label" Type="nvarchar(max)" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="FolderID" Type="int" />
+          <Property Name="DatasetID" Type="int" />
+        </EntityType>
+        <EntityType Name="VariableTypes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_FilterItems_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="0..1" />
+          <End Role="FilterItems" Type="wxp_dbModel.Store.FilterItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItems">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_FilterItemTypes">
+          <End Role="FilterItemTypes" Type="wxp_dbModel.Store.FilterItemTypes" Multiplicity="0..1" />
+          <End Role="FilterItems" Type="wxp_dbModel.Store.FilterItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilterItemTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItems">
+              <PropertyRef Name="FilterItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Items">
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="0..1" />
+          <End Role="FilterItems" Type="wxp_dbModel.Store.FilterItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Items">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItems">
+              <PropertyRef Name="FilterItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Variables_FilterVariableID">
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="0..1" />
+          <End Role="FilterItems" Type="wxp_dbModel.Store.FilterItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItems">
+              <PropertyRef Name="FilterVariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Variables_VariableID">
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="0..1" />
+          <End Role="FilterItems" Type="wxp_dbModel.Store.FilterItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItems">
+              <PropertyRef Name="VariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Folders_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="0..1" />
+          <End Role="Folders" Type="wxp_dbModel.Store.Folders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Folders">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Folders_Folders">
+          <End Role="Folders" Type="wxp_dbModel.Store.Folders" Multiplicity="0..1" />
+          <End Role="Folders1" Type="wxp_dbModel.Store.Folders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Folders">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Folders1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Headers_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="1" />
+          <End Role="Headers" Type="wxp_dbModel.Store.Headers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Headers">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="0..1" />
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Items">
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="0..1" />
+          <End Role="Items1" Type="wxp_dbModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Items">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items1">
+              <PropertyRef Name="ParentItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_ItemTypes">
+          <End Role="ItemTypes" Type="wxp_dbModel.Store.ItemTypes" Multiplicity="0..1" />
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Variables_ItemVariableID">
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="0..1" />
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="ItemVariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Variables_VariableID">
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="0..1" />
+          <End Role="Items" Type="wxp_dbModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="VariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Respondents_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="1" />
+          <End Role="Respondents" Type="wxp_dbModel.Store.Respondents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Respondents">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Store.Datasets" Multiplicity="0..1" />
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_Folders">
+          <End Role="Folders" Type="wxp_dbModel.Store.Folders" Multiplicity="0..1" />
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Folders">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="FolderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_VariableTypes">
+          <End Role="VariableTypes" Type="wxp_dbModel.Store.VariableTypes" Multiplicity="0..1" />
+          <End Role="Variables" Type="wxp_dbModel.Store.Variables" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VariableTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="VariableTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="DeleteDataset" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="datasetID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="UpdateFKColumns" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="datasetID" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="wxp_dbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="wxp_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Datasets" EntityType="wxp_dbModel.Dataset" />
+          <EntitySet Name="Folders" EntityType="wxp_dbModel.Folder" />
+          <EntitySet Name="Items" EntityType="wxp_dbModel.Item" />
+          <EntitySet Name="ItemTypes" EntityType="wxp_dbModel.ItemType" />
+          <EntitySet Name="Respondents" EntityType="wxp_dbModel.Respondent" />
+          <EntitySet Name="Variables" EntityType="wxp_dbModel.Variable" />
+          <EntitySet Name="VariableTypes" EntityType="wxp_dbModel.VariableType" />
+          <AssociationSet Name="FK_Folders_Datasets" Association="wxp_dbModel.FK_Folders_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Folders" EntitySet="Folders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Datasets" Association="wxp_dbModel.FK_Items_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Respondents_Datasets" Association="wxp_dbModel.FK_Respondents_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Respondents" EntitySet="Respondents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_Datasets" Association="wxp_dbModel.FK_Variables_Datasets">
+            <End Role="Datasets" EntitySet="Datasets" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Folders_Folders" Association="wxp_dbModel.FK_Folders_Folders">
+            <End Role="Folders" EntitySet="Folders" />
+            <End Role="Folders1" EntitySet="Folders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_Folders" Association="wxp_dbModel.FK_Variables_Folders">
+            <End Role="Folders" EntitySet="Folders" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_ItemTypes" Association="wxp_dbModel.FK_Items_ItemTypes">
+            <End Role="ItemTypes" EntitySet="ItemTypes" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Variables" Association="wxp_dbModel.FK_Items_Variables">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Variables1" Association="wxp_dbModel.FK_Items_Variables1">
+            <End Role="Variables" EntitySet="Variables" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Variables_VariableTypes" Association="wxp_dbModel.FK_Variables_VariableTypes">
+            <End Role="VariableTypes" EntitySet="VariableTypes" />
+            <End Role="Variables" EntitySet="Variables" />
+          </AssociationSet>
+          <FunctionImport Name="UpdateFKColumns">
+          <Parameter Name="datasetID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <AssociationSet Name="FK_Items_Items" Association="wxp_dbModel.FK_Items_Items">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="Item1" EntitySet="Items" />
+          </AssociationSet>
+          <EntitySet Name="Headers" EntityType="wxp_dbModel.Header" />
+          <AssociationSet Name="FK_Headers_Datasets" Association="wxp_dbModel.FK_Headers_Datasets">
+            <End Role="Dataset" EntitySet="Datasets" />
+            <End Role="Header" EntitySet="Headers" />
+          </AssociationSet>
+          <EntitySet Name="FilterItems" EntityType="wxp_dbModel.FilterItem" />
+          <EntitySet Name="FilterItemTypes" EntityType="wxp_dbModel.FilterItemType" />
+          <AssociationSet Name="FK_FilterItems_FilterItemTypes" Association="wxp_dbModel.FK_FilterItems_FilterItemTypes">
+            <End Role="FilterItemType" EntitySet="FilterItemTypes" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Items" Association="wxp_dbModel.FK_FilterItems_Items">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Variables" Association="wxp_dbModel.FK_FilterItems_Variables">
+            <End Role="Variable" EntitySet="Variables" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Variables1" Association="wxp_dbModel.FK_FilterItems_Variables1">
+            <End Role="Variable" EntitySet="Variables" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterItems_Datasets" Association="wxp_dbModel.FK_FilterItems_Datasets">
+            <End Role="Dataset" EntitySet="Datasets" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Dataset">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Folders" Relationship="wxp_dbModel.FK_Folders_Datasets" FromRole="Datasets" ToRole="Folders" />
+          <NavigationProperty Name="Items" Relationship="wxp_dbModel.FK_Items_Datasets" FromRole="Datasets" ToRole="Items" />
+          <NavigationProperty Name="Respondents" Relationship="wxp_dbModel.FK_Respondents_Datasets" FromRole="Datasets" ToRole="Respondents" />
+          <NavigationProperty Name="Variables" Relationship="wxp_dbModel.FK_Variables_Datasets" FromRole="Datasets" ToRole="Variables" />
+          <NavigationProperty Name="Headers" Relationship="wxp_dbModel.FK_Headers_Datasets" FromRole="Dataset" ToRole="Header" />
+          <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_Datasets" FromRole="Dataset" ToRole="FilterItem" />
+        </EntityType>
+        <EntityType Name="Folder">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RowIndex" Type="Int32" Nullable="false" />
+          <Property Name="FolderLevel" Type="Int32" Nullable="false" />
+          <Property Name="Label" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsUserDefined" Type="Boolean" Nullable="false" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="DatasetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_Folders_Datasets" FromRole="Folders" ToRole="Datasets" />
+          <NavigationProperty Name="ChildFolders" Relationship="wxp_dbModel.FK_Folders_Folders" FromRole="Folders" ToRole="Folders1" />
+          <NavigationProperty Name="ParentFolder" Relationship="wxp_dbModel.FK_Folders_Folders" FromRole="Folders1" ToRole="Folders" />
+          <NavigationProperty Name="Variables" Relationship="wxp_dbModel.FK_Variables_Folders" FromRole="Folders" ToRole="Variables" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="RowIndex" Type="Int32" Nullable="false" />
+          <Property Name="ColumnIndex" Type="Int32" Nullable="false" />
+          <Property Name="ItemIndex" Type="Int32" />
+          <Property Name="Label" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="NetLevel" Type="Int32" />
+          <Property Name="FactorAvg" Type="Double" />
+          <Property Name="FactorMin" Type="Double" />
+          <Property Name="FactorMax" Type="Double" />
+          <Property Name="FactorLabel" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ItemVariableID" Type="Int32" />
+          <Property Name="VariableID" Type="Int32" Nullable="false" />
+          <Property Name="DatasetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_Items_Datasets" FromRole="Items" ToRole="Datasets" />
+          <NavigationProperty Name="ItemType" Relationship="wxp_dbModel.FK_Items_ItemTypes" FromRole="Items" ToRole="ItemTypes" />
+          <NavigationProperty Name="ItemVariable" Relationship="wxp_dbModel.FK_Items_Variables" FromRole="Items" ToRole="Variables" />
+          <NavigationProperty Name="Variable" Relationship="wxp_dbModel.FK_Items_Variables1" FromRole="Items" ToRole="Variables" />
+          <Property Type="Int32" Name="ParentItemID" />
+          <NavigationProperty Name="ChildItems" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item" ToRole="Item1" />
+          <NavigationProperty Name="ParentItem" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item1" ToRole="Item" />
+          <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_Items" FromRole="Item" ToRole="FilterItem" />
+          <Property Type="Boolean" Name="LabelStartsWithPercent" />
+        </EntityType>
+        <EntityType Name="ItemType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsBaseItem" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Items" Relationship="wxp_dbModel.FK_Items_ItemTypes" FromRole="ItemTypes" ToRole="Items" />
+        </EntityType>
+        <EntityType Name="Respondent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OriginalRespondentID" Type="Int64" Nullable="false" />
+          <Property Name="RowIndex" Type="Int32" Nullable="false" />
+          <Property Name="DatasetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_Respondents_Datasets" FromRole="Respondents" ToRole="Datasets" />
+        </EntityType>
+        <EntityType Name="Variable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VariableTypeID" Type="Int32" />
+          <Property Name="RowIndex" Type="Int32" Nullable="false" />
+          <Property Name="ColumnIndex" Type="Int32" />
+          <Property Name="Label" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="FolderID" Type="Int32" />
+          <Property Name="DatasetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_Variables_Datasets" FromRole="Variables" ToRole="Datasets" />
+          <NavigationProperty Name="Folder" Relationship="wxp_dbModel.FK_Variables_Folders" FromRole="Variables" ToRole="Folders" />
+          <NavigationProperty Name="VariableItems" Relationship="wxp_dbModel.FK_Items_Variables" FromRole="Variables" ToRole="Items" />
+          <NavigationProperty Name="Items" Relationship="wxp_dbModel.FK_Items_Variables1" FromRole="Variables" ToRole="Items" />
+          <NavigationProperty Name="VariableType" Relationship="wxp_dbModel.FK_Variables_VariableTypes" FromRole="Variables" ToRole="VariableTypes" />
+          <NavigationProperty Name="UsedForFilterItems" Relationship="wxp_dbModel.FK_FilterItems_Variables" FromRole="Variable" ToRole="FilterItem" />
+          <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_Variables1" FromRole="Variable" ToRole="FilterItem" />
+        </EntityType>
+        <EntityType Name="VariableType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Variables" Relationship="wxp_dbModel.FK_Variables_VariableTypes" FromRole="VariableTypes" ToRole="Variables" />
+        </EntityType>
+        <Association Name="FK_Folders_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Dataset" Multiplicity="1" />
+          <End Role="Folders" Type="wxp_dbModel.Folder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Folders">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Dataset" Multiplicity="1" />
+          <End Role="Items" Type="wxp_dbModel.Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Respondents_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Dataset" Multiplicity="1" />
+          <End Role="Respondents" Type="wxp_dbModel.Respondent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Respondents">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_Datasets">
+          <End Role="Datasets" Type="wxp_dbModel.Dataset" Multiplicity="1" />
+          <End Role="Variables" Type="wxp_dbModel.Variable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Datasets">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Folders_Folders">
+          <End Role="Folders" Type="wxp_dbModel.Folder" Multiplicity="0..1" />
+          <End Role="Folders1" Type="wxp_dbModel.Folder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Folders">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Folders1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_Folders">
+          <End Role="Folders" Type="wxp_dbModel.Folder" Multiplicity="0..1" />
+          <End Role="Variables" Type="wxp_dbModel.Variable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Folders">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="FolderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_ItemTypes">
+          <End Role="ItemTypes" Type="wxp_dbModel.ItemType" Multiplicity="1" />
+          <End Role="Items" Type="wxp_dbModel.Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Variables">
+          <End Role="Variables" Type="wxp_dbModel.Variable" Multiplicity="0..1" />
+          <End Role="Items" Type="wxp_dbModel.Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="ItemVariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Variables1">
+          <End Role="Variables" Type="wxp_dbModel.Variable" Multiplicity="1" />
+          <End Role="Items" Type="wxp_dbModel.Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variables">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="VariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Variables_VariableTypes">
+          <End Role="VariableTypes" Type="wxp_dbModel.VariableType" Multiplicity="0..1" />
+          <End Role="Variables" Type="wxp_dbModel.Variable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VariableTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Variables">
+              <PropertyRef Name="VariableTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Items">
+          <End Type="wxp_dbModel.Item" Role="Item" Multiplicity="0..1" />
+          <End Type="wxp_dbModel.Item" Role="Item1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Item1">
+              <PropertyRef Name="ParentItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Header">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ColumnIndex" Nullable="false" />
+          <Property Type="Int32" Name="Position" Nullable="false" />
+          <Property Type="Int32" Name="Length" Nullable="false" />
+          <Property Type="Int32" Name="DatasetID" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_Headers_Datasets" FromRole="Header" ToRole="Dataset" />
+        </EntityType>
+        <Association Name="FK_Headers_Datasets">
+          <End Type="wxp_dbModel.Dataset" Role="Dataset" Multiplicity="1" />
+          <End Type="wxp_dbModel.Header" Role="Header" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dataset">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Header">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="FilterItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="FilterItemTypeID" Nullable="false" />
+          <Property Type="Int32" Name="RowIndex" Nullable="false" />
+          <Property Type="Int32" Name="ColumnIndex" Nullable="false" />
+          <Property Type="Int32" Name="ItemIndex" />
+          <Property Type="String" Name="Label" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="FilterVariableID" />
+          <Property Type="Int32" Name="FilterItemID" />
+          <Property Type="Int32" Name="VariableID" Nullable="false" />
+          <NavigationProperty Name="FilterItemType" Relationship="wxp_dbModel.FK_FilterItems_FilterItemTypes" FromRole="FilterItem" ToRole="FilterItemType" />
+          <NavigationProperty Name="Item" Relationship="wxp_dbModel.FK_FilterItems_Items" FromRole="FilterItem" ToRole="Item" />
+          <NavigationProperty Name="FilterVariable" Relationship="wxp_dbModel.FK_FilterItems_Variables" FromRole="FilterItem" ToRole="Variable" />
+          <NavigationProperty Name="Variable" Relationship="wxp_dbModel.FK_FilterItems_Variables1" FromRole="FilterItem" ToRole="Variable" />
+          <Property Type="Int32" Name="DatasetID" Nullable="false" />
+          <NavigationProperty Name="Dataset" Relationship="wxp_dbModel.FK_FilterItems_Datasets" FromRole="FilterItem" ToRole="Dataset" />
+        </EntityType>
+        <EntityType Name="FilterItemType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_FilterItemTypes" FromRole="FilterItemType" ToRole="FilterItem" />
+        </EntityType>
+        <Association Name="FK_FilterItems_FilterItemTypes">
+          <End Type="wxp_dbModel.FilterItemType" Role="FilterItemType" Multiplicity="1" />
+          <End Type="wxp_dbModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilterItemType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItem">
+              <PropertyRef Name="FilterItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Items">
+          <End Type="wxp_dbModel.Item" Role="Item" Multiplicity="0..1" />
+          <End Type="wxp_dbModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItem">
+              <PropertyRef Name="FilterItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Variables">
+          <End Type="wxp_dbModel.Variable" Role="Variable" Multiplicity="0..1" />
+          <End Type="wxp_dbModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variable">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItem">
+              <PropertyRef Name="FilterVariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Variables1">
+          <End Type="wxp_dbModel.Variable" Role="Variable" Multiplicity="1" />
+          <End Type="wxp_dbModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Variable">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItem">
+              <PropertyRef Name="VariableID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterItems_Datasets">
+          <End Type="wxp_dbModel.Dataset" Role="Dataset" Multiplicity="1" />
+          <End Type="wxp_dbModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dataset">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="FilterItem">
+              <PropertyRef Name="DatasetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="wxp_dbModelStoreContainer" CdmEntityContainer="wxp_dbEntities">
+          <EntitySetMapping Name="Datasets"><EntityTypeMapping TypeName="wxp_dbModel.Dataset"><MappingFragment StoreEntitySet="Datasets">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Folders"><EntityTypeMapping TypeName="wxp_dbModel.Folder"><MappingFragment StoreEntitySet="Folders">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+            <ScalarProperty Name="FolderLevel" ColumnName="FolderLevel" />
+            <ScalarProperty Name="Label" ColumnName="Label" />
+            <ScalarProperty Name="IsUserDefined" ColumnName="IsUserDefined" />
+            <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+            <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Items"><EntityTypeMapping TypeName="wxp_dbModel.Item"><MappingFragment StoreEntitySet="Items">
+            <ScalarProperty Name="LabelStartsWithPercent" ColumnName="LabelStartsWithPercent" />
+                <ScalarProperty Name="ParentItemID" ColumnName="ParentItemID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+            <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+            <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+            <ScalarProperty Name="ItemIndex" ColumnName="ItemIndex" />
+            <ScalarProperty Name="Label" ColumnName="Label" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="NetLevel" ColumnName="NetLevel" />
+            <ScalarProperty Name="FactorAvg" ColumnName="FactorAvg" />
+            <ScalarProperty Name="FactorMin" ColumnName="FactorMin" />
+            <ScalarProperty Name="FactorMax" ColumnName="FactorMax" />
+            <ScalarProperty Name="FactorLabel" ColumnName="FactorLabel" />
+            <ScalarProperty Name="ItemVariableID" ColumnName="ItemVariableID" />
+            <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+            <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ItemTypes"><EntityTypeMapping TypeName="wxp_dbModel.ItemType"><MappingFragment StoreEntitySet="ItemTypes">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="IsBaseItem" ColumnName="IsBaseItem" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Respondents"><EntityTypeMapping TypeName="wxp_dbModel.Respondent"><MappingFragment StoreEntitySet="Respondents">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="OriginalRespondentID" ColumnName="OriginalRespondentID" />
+            <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+            <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Variables"><EntityTypeMapping TypeName="wxp_dbModel.Variable"><MappingFragment StoreEntitySet="Variables">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+            <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+            <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+            <ScalarProperty Name="Label" ColumnName="Label" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+            <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="VariableTypes"><EntityTypeMapping TypeName="wxp_dbModel.VariableType"><MappingFragment StoreEntitySet="VariableTypes">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Headers">
+            <EntityTypeMapping TypeName="wxp_dbModel.Header">
+              <MappingFragment StoreEntitySet="Headers">
+                <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilterItems">
+            <EntityTypeMapping TypeName="wxp_dbModel.FilterItem">
+              <MappingFragment StoreEntitySet="FilterItems">
+                <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+                <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+                <ScalarProperty Name="FilterItemID" ColumnName="FilterItemID" />
+                <ScalarProperty Name="FilterVariableID" ColumnName="FilterVariableID" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="ItemIndex" ColumnName="ItemIndex" />
+                <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+                <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+                <ScalarProperty Name="FilterItemTypeID" ColumnName="FilterItemTypeID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilterItemTypes">
+            <EntityTypeMapping TypeName="wxp_dbModel.FilterItemType">
+              <MappingFragment StoreEntitySet="FilterItemTypes">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="UpdateFKColumns" FunctionName="wxp_dbModel.Store.UpdateFKColumns" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="wxpDBModel">
+        <EntityTypeShape EntityType="wxp_dbModel.Dataset" Width="1.5" PointX="0.75" PointY="7.25" Height="2.5571907552083326" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.Folder" Width="1.5" PointX="3" PointY="7.625" Height="3.1340950520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.Item" Width="1.5" PointX="7.5" PointY="5.125" Height="4.8648079427083344" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.ItemType" Width="1.5" PointX="9.625" PointY="6.375" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.Respondent" Width="1.5" PointX="5.25" PointY="9.875" Height="1.9802864583333353" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.Variable" Width="1.5" PointX="5.25" PointY="5.25" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="wxp_dbModel.VariableType" Width="1.5" PointX="3" PointY="5.25" Height="1.5956835937499996" IsExpanded="true" />
+        <AssociationConnector Association="wxp_dbModel.FK_Folders_Datasets" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.7160953776041659" />
+          <ConnectorPoint PointX="3" PointY="8.7160953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Items_Datasets" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="7.25" />
+          <ConnectorPoint PointX="1.5" PointY="5.15625" />
+          <ConnectorPoint PointX="7.5" PointY="5.15625" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Respondents_Datasets" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.274415703125" PointY="9.8071907552083335" />
+          <ConnectorPoint PointX="1.274415703125" PointY="11.432190755208334" />
+          <ConnectorPoint PointX="1.7101270182291668" PointY="11.432190755208334" />
+          <ConnectorPoint PointX="1.8767936848958333" PointY="11.432190755208334" />
+          <ConnectorPoint PointX="5.25" PointY="11.432190755208334" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Variables_Datasets" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="7.40625" />
+          <ConnectorPoint PointX="5.25" PointY="7.40625" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Folders_Folders" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="10.759095052083332" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="11.009095052083332" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="11.009095052083332" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="10.759095052083332" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Variables_Folders" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="8.389150390625" />
+          <ConnectorPoint PointX="5.25" PointY="8.389150390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Items_ItemTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.625" PointY="7.2689925130208337" />
+          <ConnectorPoint PointX="9" PointY="7.2689925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Items_Variables" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="7.8199523925781254" />
+          <ConnectorPoint PointX="7.5" PointY="7.8199523925781254" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Items_Variables1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="6.4724761962890627" />
+          <ConnectorPoint PointX="7.5" PointY="6.4724761962890627" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Variables_VariableTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.047841796875" />
+          <ConnectorPoint PointX="5.25" PointY="6.047841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_Items_Items" >
+          <ConnectorPoint PointX="8.0319230769230767" PointY="10.566712239583332" />
+          <ConnectorPoint PointX="8.0319230769230767" PointY="10.816712239583332" />
+          <ConnectorPoint PointX="8.47846153846154" PointY="10.816712239583332" />
+          <ConnectorPoint PointX="8.47846153846154" PointY="10.566712239583332" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="wxp_dbModel.Header" Width="1.5" PointX="3" PointY="12.375" Height="2.1725878906249996" />
+        <AssociationConnector Association="wxp_dbModel.FK_Headers_Datasets" >
+          <ConnectorPoint PointX="1.7934603515625" PointY="9.8071907552083335" />
+          <ConnectorPoint PointX="1.7934603515625" PointY="13.4612939453125" />
+          <ConnectorPoint PointX="3" PointY="13.4612939453125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="wxp_dbModel.FilterItem" Width="1.5" PointX="9.75" PointY="9.125" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="wxp_dbModel.FilterItemType" Width="1.5" PointX="7.5" PointY="12" Height="1.5956835937499996" />
+        <AssociationConnector Association="wxp_dbModel.FK_FilterItems_FilterItemTypes" >
+          <ConnectorPoint PointX="9" PointY="12.514150390625" />
+          <ConnectorPoint PointX="9.75" PointY="12.514150390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_FilterItems_Items" >
+          <ConnectorPoint PointX="9" PointY="9.8458561197916659" />
+          <ConnectorPoint PointX="9.75" PointY="9.8458561197916659" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_FilterItems_Variables" >
+          <ConnectorPoint PointX="5.7460925" PointY="9.15330078125" />
+          <ConnectorPoint PointX="5.7460925" PointY="9.625" />
+          <ConnectorPoint PointX="6.195964916666667" PointY="9.625" />
+          <ConnectorPoint PointX="6.3626315833333331" PointY="9.625" />
+          <ConnectorPoint PointX="7" PointY="9.625" />
+          <ConnectorPoint PointX="7" PointY="11.535037228545466" />
+          <ConnectorPoint PointX="9.75" PointY="11.535037228545466" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_FilterItems_Variables1" >
+          <ConnectorPoint PointX="6.27929825" PointY="9.15330078125" />
+          <ConnectorPoint PointX="6.27929825" PointY="9.75" />
+          <ConnectorPoint PointX="6.916666666666667" PointY="9.75" />
+          <ConnectorPoint PointX="7.083333333333333" PointY="9.75" />
+          <ConnectorPoint PointX="7.25" PointY="9.75" />
+          <ConnectorPoint PointX="7.25" PointY="11.144622234064398" />
+          <ConnectorPoint PointX="9.75" PointY="11.144622234064398" />
+        </AssociationConnector>
+        <AssociationConnector Association="wxp_dbModel.FK_FilterItems_Datasets" >
+          <ConnectorPoint PointX="0.98095585156250009" PointY="9.8071907552083335" />
+          <ConnectorPoint PointX="0.98095585156250009" PointY="12.105286458333335" />
+          <ConnectorPoint PointX="1.7101270182291668" PointY="12.105286458333335" />
+          <ConnectorPoint PointX="1.8767936848958333" PointY="12.105286458333335" />
+          <ConnectorPoint PointX="7.25" PointY="12.105286458333335" />
+          <ConnectorPoint PointX="7.25" PointY="11.767521114272734" />
+          <ConnectorPoint PointX="9.75" PointY="11.767521114272734" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
