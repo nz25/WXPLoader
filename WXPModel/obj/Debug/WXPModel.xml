@@ -6,20 +6,7 @@ WXPModel
 </name>
 </assembly>
 <members>
-<member name="P:WXPModel.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:WXPModel.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:WXPModel.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:WXPModel.wxp_dbEntities.#ctor">
+<member name="M:WXPModel.wxp_dbEntities.#ctor">
 	<summary>
  Initialisiert ein neues wxp_dbEntities-Objekt mithilfe der in Abschnitt 'wxp_dbEntities' der Anwendungskonfigurationsdatei gefundenen Verbindungszeichenfolge.
  </summary>
@@ -461,6 +448,10 @@ WXPModel
 	<summary>
  Keine Dokumentation für Metadaten verfügbar.
  </summary>
+</member><member name="P:WXPModel.Item.LabelStartsWithPercent">
+	<summary>
+ Keine Dokumentation für Metadaten verfügbar.
+ </summary>
 </member><member name="P:WXPModel.Item.Dataset">
 	<summary>
  Keine Dokumentation für Metadaten verfügbar.
@@ -683,6 +674,19 @@ WXPModel
 	<summary>
  Keine Dokumentation für Metadaten verfügbar.
  </summary>
+</member><member name="P:WXPModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WXPModel.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WXPModel.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

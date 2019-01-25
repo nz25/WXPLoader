@@ -2,19 +2,26 @@ C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\bin\D
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\bin\Debug\WXPModel.dll
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\bin\Debug\WXPModel.pdb
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\bin\Debug\WXPModel.xml
-C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.Resources.resources
-C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.dll
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.xml
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.pdb
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\bin\Debug\WXPModel.dll.config
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\bin\Debug\WXPModel.dll
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\bin\Debug\WXPModel.pdb
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\bin\Debug\WXPModel.xml
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\obj\Debug\WXPModel.Resources.resources
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\obj\Debug\WXPModel.dll
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\obj\Debug\WXPModel.xml
-X:\dev\2010\WXPLoader - Backup_1208_2012\WXPModel\obj\Debug\WXPModel.pdb
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.dll.config
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.dll
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.pdb
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.xml
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.Resources.resources
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.dll
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.xml
+C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.dll.config
+X:\dev\2010\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader_VS2013\WXPModel\bin\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.Resources.resources
+X:\dev\2010\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.vbproj.GenerateResource.Cache
+X:\dev\2010\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader_VS2013\WXPModel\obj\Debug\WXPModel.pdb

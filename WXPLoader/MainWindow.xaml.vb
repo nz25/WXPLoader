@@ -16,11 +16,12 @@ Class MainWindow
 
             'Catch ex As Exception
             'MessageBox.Show(ex.Message)
-            'End Try
+            ' End Try
 
         End If
 
-        MessageBox.Show("Done")
+        Dim msg As String = "Done. " & Now.ToString
+        MessageBox.Show(msg)
 
     End Sub
 

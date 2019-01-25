@@ -25,6 +25,7 @@
     <EntitySetMapping Name="Items">
       <EntityTypeMapping TypeName="wxp_dbModel.Item">
         <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="LabelStartsWithPercent" ColumnName="LabelStartsWithPercent" />
           <ScalarProperty Name="ParentItemID" ColumnName="ParentItemID" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />

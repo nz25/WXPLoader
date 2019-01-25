@@ -139,6 +139,7 @@
     <NavigationProperty Name="ChildItems" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item" ToRole="Item1" />
     <NavigationProperty Name="ParentItem" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item1" ToRole="Item" />
     <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_Items" FromRole="Item" ToRole="FilterItem" />
+    <Property Type="Boolean" Name="LabelStartsWithPercent" />
   </EntityType>
   <EntityType Name="ItemType">
     <Key>

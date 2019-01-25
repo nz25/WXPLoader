@@ -16,7 +16,7 @@ Imports System.ComponentModel
 Imports System.Xml.Serialization
 Imports System.Runtime.Serialization
 
-<Assembly: EdmSchemaAttribute("9989a195-24d6-46be-8de6-a35d9d1c6281")>
+<Assembly: EdmSchemaAttribute("4609814a-f925-4104-81b7-23627b1eb2b3")>
 #Region "EDM-Beziehungsmetadaten"
 <Assembly: EdmRelationshipAttribute("wxp_dbModel", "FK_Folders_Datasets", "Datasets", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Dataset), "Folders", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(Folder), True)>
 <Assembly: EdmRelationshipAttribute("wxp_dbModel", "FK_Items_Datasets", "Datasets", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(Dataset), "Items", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(Item), True)>
@@ -2008,6 +2008,31 @@ Public Partial Class Item
     End Sub
 
     Private Partial Sub OnParentItemIDChanged()
+    End Sub
+
+    ''' <summary>
+    ''' Keine Dokumentation für Metadaten verfügbar.
+    ''' </summary>
+    <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=true)>
+    <DataMemberAttribute()>
+    Public Property LabelStartsWithPercent() As Nullable(Of Global.System.Boolean)
+        Get
+            Return _LabelStartsWithPercent
+        End Get
+        Set
+            OnLabelStartsWithPercentChanging(value)
+            ReportPropertyChanging("LabelStartsWithPercent")
+            _LabelStartsWithPercent = StructuralObject.SetValidValue(value)
+            ReportPropertyChanged("LabelStartsWithPercent")
+            OnLabelStartsWithPercentChanged()
+        End Set
+    End Property
+
+    Private _LabelStartsWithPercent As Nullable(Of Global.System.Boolean)
+    Private Partial Sub OnLabelStartsWithPercentChanging(value As Nullable(Of Global.System.Boolean))
+    End Sub
+
+    Private Partial Sub OnLabelStartsWithPercentChanged()
     End Sub
 
     #End Region
