@@ -6,7 +6,15 @@ WXPLoader
 </name>
 </assembly>
 <members>
-<member name="M:WXPLoader.Application.InitializeComponent">
+<member name="M:WXPLoader.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WXPLoader.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="M:WXPLoader.Application.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -17,14 +25,6 @@ Application Entry Point.
 </member><member name="T:WXPLoader.Application">
 	<summary>
 Application
-</summary>
-</member><member name="M:WXPLoader.MainWindow.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:WXPLoader.MainWindow">
-	<summary>
-MainWindow
 </summary>
 </member><member name="P:WXPLoader.My.Resources.Resources.ResourceManager">
 	<summary>

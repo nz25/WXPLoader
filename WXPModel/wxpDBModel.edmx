@@ -147,7 +147,6 @@
           <Property Name="ItemIndex" Type="int" />
           <Property Name="Label" Type="nvarchar(max)" />
           <Property Name="IsDeleted" Type="bit" />
-          <Property Name="LabelStartsWithPercent" Type="bit" />
           <Property Name="NetLevel" Type="int" />
           <Property Name="ParentItemID" Type="int" />
           <Property Name="FactorAvg" Type="float" />
@@ -548,7 +547,6 @@
           <NavigationProperty Name="ChildItems" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item" ToRole="Item1" />
           <NavigationProperty Name="ParentItem" Relationship="wxp_dbModel.FK_Items_Items" FromRole="Item1" ToRole="Item" />
           <NavigationProperty Name="FilterItems" Relationship="wxp_dbModel.FK_FilterItems_Items" FromRole="Item" ToRole="FilterItem" />
-          <Property Type="Boolean" Name="LabelStartsWithPercent" />
         </EntityType>
         <EntityType Name="ItemType">
           <Key>
@@ -860,8 +858,7 @@
             <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="Items"><EntityTypeMapping TypeName="wxp_dbModel.Item"><MappingFragment StoreEntitySet="Items">
-            <ScalarProperty Name="LabelStartsWithPercent" ColumnName="LabelStartsWithPercent" />
-                <ScalarProperty Name="ParentItemID" ColumnName="ParentItemID" />
+            <ScalarProperty Name="ParentItemID" ColumnName="ParentItemID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
             <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
             <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />

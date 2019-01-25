@@ -28,7 +28,7 @@ Public Class WXPManager
         Me.wxpRows.Clear()
         Me.wxpRows = Nothing
 
-        '.PopulateFacts(New StreamReader(fileName, Encoding.Default, True))
+        Me.PopulateFacts(New StreamReader(fileName, Encoding.Default, True))
 
     End Sub
 
@@ -63,24 +63,21 @@ Public Class WXPManager
                 type = WXPDBRowTypes.ControlData
             End If
 
-            If type <> WXPDBRowTypes.CaseData Then
+            Dim row As WXPRow = New WXPRow
+            row.Initialize(line, rowIndex, type)
+            row.Parse()
+            row.Source = Nothing
+            Me.wxpRows.Add(row)
 
-                Dim row As WXPRow = New WXPRow
-                row.Initialize(line, rowIndex, type)
-                row.Parse()
-                row.Source = Nothing
-                Me.wxpRows.Add(row)
-
-                Dim originalRow As WXPRow = New WXPRow
-                originalRow.Initialize(line, rowIndex, type)
-                originalRows.Add(originalRow)
-            End If
-
+            Dim originalRow As WXPRow = New WXPRow
+            originalRow.Initialize(line, rowIndex, type)
+            originalRows.Add(originalRow)
+            
             If originalRows.Count = BULK_ROW_COUNT_FOR_ROWS Then
                 Me.LoadOriginalData(originalRows)
                 originalRows = New List(Of WXPRow)
             End If
-            Debug.Print(rowIndex.ToString)
+
         Loop
         Me.LoadOriginalData(originalRows)
         stream.Dispose()
@@ -214,7 +211,6 @@ Public Class WXPManager
                 Else
                     item.ItemTypeID = WXPDBItemTypes.Categorical
                     item.ItemIndex = Me.ConvertItemIndex(row.ItemIndex)
-                    item.LabelStartsWithPercent = row.LabelStartsWithPercent
                     item.Label = row.Label
 
                 End If
@@ -254,7 +250,6 @@ Public Class WXPManager
                 item.ColumnIndex = CLng(row.ColumnIndex)
                 item.Dataset = currentDataset
                 item.Variable = currentVariable
-                item.LabelStartsWithPercent = row.LabelStartsWithPercent
                 context.Items.AddObject(item)
             ElseIf row.Prefix = "AL" Then
                 'Create item (numeric grouped)
@@ -266,7 +261,6 @@ Public Class WXPManager
                 item.Dataset = currentDataset
                 item.ColumnIndex = CLng(row.ColumnIndex)
                 item.Variable = currentVariable
-                item.LabelStartsWithPercent = row.LabelStartsWithPercent
                 context.Items.AddObject(item)
             ElseIf row.RowType = WXPDBRowTypes.CaseData Then
                 Dim respondent As Respondent = New Respondent
@@ -436,7 +430,6 @@ Public Class WXPManager
                 End Select
 
             End If
-
         Next
 
         bh.BulkInsert(f1)

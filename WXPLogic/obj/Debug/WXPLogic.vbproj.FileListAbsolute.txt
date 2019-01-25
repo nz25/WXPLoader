@@ -5,22 +5,23 @@ C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\D
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.dll
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.pdb
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\bin\Debug\WXPModel.xml
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.Resources.resources
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.dll
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.xml
 C:\Users\ZorenkoD\documents\visual studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.pdb
-C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbprojResolveAssemblyReference.cache
-C:\Users\ZorenkoD\Documents\Visual Studio 2010\Projects\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbproj.GenerateResource.Cache
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll.config
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPLogic.dll
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPLogic.pdb
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPLogic.xml
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPModel.dll
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPModel.pdb
-X:\dev\2010\WXPLoader\WXPLogic\bin\Debug\WXPModel.xml
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbprojResolveAssemblyReference.cache
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.Resources.resources
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.vbproj.GenerateResource.Cache
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.dll
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.xml
-X:\dev\2010\WXPLoader\WXPLogic\obj\Debug\WXPLogic.pdb
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPLogic.dll.config
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPLogic.dll
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPLogic.pdb
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPLogic.xml
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPModel.dll
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPModel.pdb
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\bin\Debug\WXPModel.xml
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.vbprojResolveAssemblyReference.cache
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.Resources.resources
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.vbproj.GenerateResource.Cache
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.dll
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.xml
+X:\dev\2010\WXPLoader - Backup_1208_2012\WXPLogic\obj\Debug\WXPLogic.pdb

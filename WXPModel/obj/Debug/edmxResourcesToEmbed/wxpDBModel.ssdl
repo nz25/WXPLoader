@@ -142,7 +142,6 @@
     <Property Name="ItemIndex" Type="int" />
     <Property Name="Label" Type="nvarchar(max)" />
     <Property Name="IsDeleted" Type="bit" />
-    <Property Name="LabelStartsWithPercent" Type="bit" />
     <Property Name="NetLevel" Type="int" />
     <Property Name="ParentItemID" Type="int" />
     <Property Name="FactorAvg" Type="float" />

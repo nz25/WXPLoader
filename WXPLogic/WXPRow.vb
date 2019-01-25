@@ -5,7 +5,6 @@
     Public RowType As WXPDBRowTypes
     Public RespondentID As String
     Public StartsWithAsterix As Boolean
-    Public LabelStartsWithPercent As Boolean
     Public Prefix As String
     Public Label As String
     Public Level As String
@@ -125,12 +124,7 @@
         End If
 
         'Label
-        If line.Length > 0 AndAlso line.Substring(0, 1) = "%" Then
-            Me.LabelStartsWithPercent = True
-            Me.Label = line.Substring(1)
-        Else
-            Me.Label = line
-        End If
+        Me.Label = line
 
     End Sub
 
